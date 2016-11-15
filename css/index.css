@@ -1,1 +1,178 @@
+body{
+	font-family: "microsoft yahei";
+}
+.title{
+	text-align: center;
+	font-size: 36px;
+	color:#333;
+	margin-bottom: 80px;
+}
 
+.tips{
+	font-size: 28px;
+	text-align: center;
+	color:#888;
+}
+.hide{
+	display: none;
+}
+
+.txt{
+	display: block;
+	width: 400px;
+	height: 60px;
+	border:1px solid #e0e0e0;
+	border-radius: 5px;
+	margin:40px auto;
+	box-sizing:border-box;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.btn{
+	display: block;
+	margin:80px auto 0 auto;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #ff6450;
+	color:#fff;
+	font-size: 24px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.err_tips{
+	color:red;
+	font-size:20px;
+	margin:-35px auto 30px auto;
+	text-align: center;
+}
+
+.clearfix{
+	display: table;
+	width: 1100px;
+	margin:0 auto;
+}
+.clearfix:before,.clearfix:after{
+	clear:both;
+}
+
+.monster{
+	display: block;
+	margin:0 auto;
+	width: 400px;
+	height: 400px;
+}
+.monster.hit{
+	animation:hit 0.5s;
+}
+
+.blood{
+	position: relative;
+	width: 700px;
+	height: 50px;
+	margin: 0 auto;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+.blood .red{
+	position: absolute;
+	left:0;
+	top:0;
+	height: 50px;
+	width: 100%;
+	background-color:#e74851;
+	border-radius: 5px;
+}
+
+.attack{
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: #ff6450;
+	color:#fff;
+	font-size: 20px;
+	margin:50px auto;
+	line-height: 100px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50px;
+}
+.attack.stop{
+	color:#ccc;
+	background-color: #f0f0f0;
+}
+
+.play{
+	float: left;
+}
+
+/*队伍*/
+.team{
+	float: right;
+	width: 300px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	height: 600px;
+	overflow-y:auto; 
+}
+.team .team_head{
+	text-align: center;
+	font-size: 20px;
+}
+.team .user_list{
+	display: block;
+	padding: 0 20px;k
+}
+.team .user_item{
+	list-style:none;
+	font-size:20px;
+	margin:20px;
+	background-color: #efefef;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+}
+
+/*记录*/
+.record{
+	width: 1100px;
+	margin: 0 auto;
+	height: 120px;
+	font-size: 16px;
+	color: #333;
+	background-color: #f0f0f0;
+	padding: 10px;
+	box-sizing: border-box;
+	overflow-y:auto;
+	border-radius: 5px;
+}
+.record p{
+	margin:0 0 10px 0;
+}
+.record .attacknum{
+	padding:0 5px;
+	color:#e74851;
+}
+.record .username{
+	padding:0 5px;
+	color:#3CB5C2;
+}
+
+
+/*动画*/
+@keyframes hit{
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+		transform:translate(10px,-10px);
+	}
+	100%{
+		opacity: 1;
+	}
+}
